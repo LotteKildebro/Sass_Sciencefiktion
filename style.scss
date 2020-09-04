@@ -17,14 +17,14 @@ $relative: relative;
 $scale: scale(1);
 $minus10: -10%;
 $flex-it-up: flex;
-@mixin my-width ($width: 1400px) {
+@mixin my-width ($width: 1420px) {
     width: $width;
 }
 
 body {
-    background-color: $brandcolor;
+    background-color: $secound_brandcolor;
     p {
-        color: $secound_brandcolor;
+        color: $brandcolor;
         font-family: $font_family;
     }
 }
@@ -91,13 +91,13 @@ h1,
 
 h4 {
     font-size: 2em;
-    color: $secound_brandcolor;
+    color: $brandcolor;
     font-family: $h1-font;
 }
 
 h2,
 h3 {
-    color: $secound_brandcolor;
+    color: $brandcolor;
     font-family: $h1-font;
     font-size: 3em;
 }
@@ -105,7 +105,7 @@ h3 {
 //Row for top text
 .row2 {
     display: $flex-it-up;
-    @include my-width(90%);
+    @include my-width(80%);
     margin: 0 auto;
     .column2 {
         flex: 50%;
@@ -117,7 +117,7 @@ h3 {
 //Rows 4 movie descriptions
 .row {
     display: $flex-it-up;
-    @include my-width(90%);
+    @include my-width(80%);
     margin: 0 auto;
     background-color: lighten($brandcolor, 100%);
     p {
@@ -138,6 +138,7 @@ nav {
     $hue-change-percentage: 360% / $link-count;
     $link-width-percentage: 100% / $link-count;
     min-width: 220px;
+    z-index: 2;
     ul {
         margin: 0;
         padding: 0;
@@ -153,11 +154,11 @@ nav {
             text-align: $centering;
             a {
                 display: block;
-                background: $brandcolor;
+                background: $secound_brandcolor;
                 padding: 10px;
                 text-decoration: none;
                 font-weight: bold;
-                color: rgb(255, 255, 255);
+                color: $brandcolor;
                 &:hover {
                     color: rgb(189, 184, 184);
                 }

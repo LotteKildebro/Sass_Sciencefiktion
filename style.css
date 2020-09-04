@@ -1,12 +1,12 @@
 body {
-  background-color: black; }
+  background-color: white; }
   body p {
-    color: white;
+    color: black;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
 #wrapper {
   position: relative;
-  width: 1400px;
+  width: 1420px;
   height: auto; }
 
 .videocontainer {
@@ -54,18 +54,18 @@ h1,
 
 h4 {
   font-size: 2em;
-  color: white;
+  color: black;
   font-family: "Anton", sans-serif; }
 
 h2,
 h3 {
-  color: white;
+  color: black;
   font-family: "Anton", sans-serif;
   font-size: 3em; }
 
 .row2 {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: 0 auto; }
   .row2 .column2 {
     flex: 50%;
@@ -74,7 +74,7 @@ h3 {
 
 .row {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   background-color: white; }
   .row p {
@@ -85,7 +85,8 @@ h3 {
     margin: 20px; }
 
 nav {
-  min-width: 220px; }
+  min-width: 220px;
+  z-index: 2; }
   nav ul {
     margin: 0;
     padding: 0;
@@ -101,11 +102,11 @@ nav {
       text-align: center; }
       nav ul li a {
         display: block;
-        background: black;
+        background: white;
         padding: 10px;
         text-decoration: none;
         font-weight: bold;
-        color: white; }
+        color: black; }
         nav ul li a:hover {
           color: #bdb8b8; }
 
