@@ -16,6 +16,7 @@ $absolute: absolute;
 $relative: relative;
 $scale: scale(1);
 $minus10: -10%;
+$flex-it-up: flex;
 @mixin my-width ($width: 1400px) {
     width: $width;
 }
@@ -101,9 +102,21 @@ h3 {
     font-size: 3em;
 }
 
+//Row for top text
+.row2 {
+    display: $flex-it-up;
+    @include my-width(90%);
+    margin: 0 auto;
+    .column2 {
+        flex: 50%;
+        padding: 5px;
+        margin: 20px;
+    }
+}
+
 //Rows 4 movie descriptions
 .row {
-    display: flex;
+    display: $flex-it-up;
     @include my-width(90%);
     margin: 0 auto;
     background-color: lighten($brandcolor, 100%);
@@ -171,7 +184,7 @@ hr {
 }
 
 footer {
-    display: flex;
+    display: $flex-it-up;
     margin-top: 50px;
     align-items: $centering;
     justify-content: $centering;
