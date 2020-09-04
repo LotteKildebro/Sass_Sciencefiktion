@@ -1,0 +1,133 @@
+//variabler
+$hundredprocent: 100%;
+$brandcolor: rgb(0, 0, 0);
+$secound_brandcolor: white;
+$font_family: 'Lucida Sans',
+'Lucida Sans Regular',
+'Lucida Grande',
+'Lucida Sans Unicode',
+Geneva,
+Verdana,
+sans-serif;
+$h1-font: 'Anton',
+sans-serif;
+$centering: center;
+$absolute: absolute;
+body {
+    background-color: $brandcolor;
+    p {
+        color: $secound_brandcolor;
+        font-family: $font_family;
+    }
+}
+
+#wrapper {
+    position: relative;
+    width: 1400px;
+    height: auto;
+}
+
+//header styling
+.videocontainer {
+    max-width: 1280px;
+}
+
+#myVideo {
+    padding: 0;
+    position: $absolute;
+    right: 0;
+    bottom: 0;
+    min-width: $hundredprocent;
+    min-height: $hundredprocent;
+    top: 10%;
+    object-fit: cover;
+}
+
+video {
+    width: $hundredprocent;
+}
+
+.content {
+    position: $absolute;
+    width: $hundredprocent;
+    margin-top: 10%;
+}
+
+.marg {
+    margin-top: 50em;
+}
+
+.bghead {
+    height: 700px;
+    width: $hundredprocent;
+    margin-top: 0em;
+}
+
+h1,
+.h12 {
+    font-family: $h1-font;
+    font-size: 6em !important;
+    text-align: $centering;
+    color: $secound_brandcolor;
+    font-style: thick;
+}
+
+.h12 {
+    font-weight: lighter;
+    font-size: 3em !important;
+}
+
+h2,
+h3,
+h4 {
+    color: $secound_brandcolor;
+    font-family: $h1-font;
+}
+
+//Nav style
+nav {
+    //Nav variabler
+    $link-count: 6;
+    $link-calculated-height: 40px;
+    $hue-change-percentage: 360% / $link-count;
+    $link-width-percentage: 100% / $link-count;
+    min-width: 220px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        float: left;
+        width: $hundredprocent;
+        font-family: $font_family;
+        li {
+            cursor: pointer;
+            float: left;
+            width: $link-width-percentage;
+            text-align: $centering;
+            a {
+                display: block;
+                background: $brandcolor;
+                padding: 10px;
+                text-decoration: none;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                &:hover {
+                    color: rgb(189, 184, 184);
+                }
+            }
+        }
+    }
+}
+
+//Arrow down
+.arrow {
+    position: $absolute;
+    top: 20;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+    background-size: contain;
+}
